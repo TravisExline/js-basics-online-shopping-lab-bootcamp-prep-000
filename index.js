@@ -10,11 +10,13 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var cost = {price: Math.floor(Math.random()*100)};
-  var newItem = new Object({itemName: item, itemPrice: Math.floor(Math.random()*100)});
-  getCart().push(newItem);
-  return `${newItem} has been added to your cart.`;
-  }
+ let newItem = {
+   "itemName": item,
+   "itemPrice": Math.floor(Math.random()*100)
+ }
+ getCart().push(newItem);
+ return `${newItem.itemName} has been added to your cart.`;
+}
 
 function viewCart() {
   if(getCart().length === 0) {
