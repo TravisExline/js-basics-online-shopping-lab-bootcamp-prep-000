@@ -19,14 +19,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if(getCart().length === 0) {
-    console.log("Your shopping cart is empty.")
-  }
-  else{
-    for(var i=0; getCart.length = 1; i++){
-      console.log(`In your cart, you have ${item} at ${price}`)
-    }
-  }
+  
 }
 
 function total() {
