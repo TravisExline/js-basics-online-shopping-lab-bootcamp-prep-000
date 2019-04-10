@@ -21,7 +21,7 @@ function viewCart() {
     }
     console.log("In your cart, you have " + items.join(", ") + ".");
   }
-}}
+}
 
 function viewCart() {
   if(getCart.length === 0) {
