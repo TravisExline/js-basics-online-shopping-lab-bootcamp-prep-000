@@ -11,13 +11,15 @@ function setCart(c) {
 
 function addToCart(item) {
   var cost = {price: Math.floor(Math.random()*100+1)}
-  var item = {itemName: itemName}
+  var item = {}
   console.log(`${item} has been added to your cart.`)
   return cart;
   }
 
 function viewCart() {
-
+  if (cart.length < 1) {
+    console.log("Your shopping cart is empty.")
+  }
 }
 
 function total() {
