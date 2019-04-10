@@ -45,9 +45,27 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  let itemToRemove = '';
+  for (let i=0; i< getCart().length; i++) {
+    if (getCart()[i].itemName=== item) {
+      itemToRemove=getCart()[i]
+    }
+  }
+  if (itemToRemove) {
+    let index = getCart().indexOf(itemToRemove);
+    getCart().splice(index, 1);
+  } else {
+    return "That item is not in your cart.";
+  }
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  if (!cardNumber) {
+    return "Sorry, we don't have a credit card on file for you.";
+  } else {
+    console.log("total=", total())
+    let cartTotal = total();
+    setCart([]);
+    return `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`
+  }
 }
