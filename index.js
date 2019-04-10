@@ -33,7 +33,7 @@ function viewCart() {
   } else {
     return "Your shopping cart is empty.";
   }
-  return list.join("");
+  return list.join(" ");
 }
 
 function total() {
