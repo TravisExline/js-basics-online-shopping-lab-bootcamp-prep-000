@@ -25,7 +25,7 @@ function viewCart() {
     for(var i=0; cart.length = 1; i++){
       console.log(`In your cart, you have ${item} at ${price}`)
     }
-  } 
+  }
 }
 
 function total() {
